@@ -65,3 +65,8 @@ Re-oriented plane:
 
 ![](https://github.com/anupamasekar/pc-assignment/blob/main/data/reoriented-plane.png)
 
+**Additional comments**
+1. Plane segmentation can fail to detect the floor if there are multiple similar sized planes in the scene, due to walls or other planar objects
+2. In such cases we can iteratively use RANSAC to segment all the planes and using some criterion pick the plane that is likely to be the floor
+3. Plane fitting and surface reconstruction can be challenging when the point cloud is too noisy or too sparse
+4. Noise fitering and downsampling can help improve robustness to noise
