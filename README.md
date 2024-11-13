@@ -74,4 +74,15 @@ Re-oriented plane:
 
 4. We can verify this by checking that `R1 * R2 = I` and `T1 + T2 = 0`. Alternatively we can also check if the re-oriented plane matches the original XZ plane.
 
- Note that in step 2, we cannot apply rotation about Y axis as the algorithm only aligns the floor perpendicular to Y axis but allows any rotation about Y axis.
+`R1 * R2 = `
+```
+[[ 1.00000000e+00 -3.97491755e-16 -7.45206385e-17]
+ [ 3.63890903e-16  1.00000000e+00 -1.07006905e-16]
+ [-4.17507078e-18  2.92120513e-17  1.00000000e+00]]
+```
+`T1 + T2 = `
+```
+[ 1.38777878e-16  5.55111512e-16 -1.11022302e-15]
+```
+
+Note that in step 2, we cannot apply rotation about Y axis as the algorithm only aligns the floor perpendicular to Y axis but allows any rotation about Y axis.
